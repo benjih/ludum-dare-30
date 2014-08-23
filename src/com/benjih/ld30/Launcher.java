@@ -1,5 +1,7 @@
 package com.benjih.ld30;
 
+import com.benjih.ld30.FullscreenSprite;
+
 public class Launcher {
 
 	public static void main(String args[]) throws Exception {
@@ -7,10 +9,13 @@ public class Launcher {
 		
 		display.init();
 		
+		new FullscreenSprite(display, GameRes.SPLASH).run();
+		new FullscreenSprite(display, GameRes.INSTRUCTIONS).run();
+		
 		while(true) {
 			display.blit();
-			display.update();
 			display.closeIfRequested();
+			display.update();
 		}
 	}
 }
