@@ -1,7 +1,7 @@
 package com.benjih.ld30;
 
 public enum SolarSystemPosition {
-	POSITION_1(100, 10), POSITION_2(100, 100), POSITION_3(100, 200), POSITION_4(100, 300), POSITION_5(100,400);
+	POSITION_1(100, 10), POSITION_2(100, 100), POSITION_3(200, 100), POSITION_4(300, 100), POSITION_5(400,100);
 	
 	private int x, y;
 	

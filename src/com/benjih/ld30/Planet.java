@@ -6,11 +6,11 @@ public class Planet {
 	private String name;
 	private Sprite sprite;
 
-	public Planet(PlanetType planetType, String name) {
+	public Planet(PlanetType planetType, int size, SolarSystemPosition position, String name) {
 		this.planetType = planetType;
 		this.name = name;
 		
-		this.sprite = new Sprite(0, 0, GameRes.PLANET.getResourceAddress() + "1-" + planetType.getTypeInt() + "-1.png");
+		this.sprite = new Sprite(position.getX(), position.getY(), GameRes.PLANET.getResourceAddress() + size + "-" + planetType.getTypeInt() + "-1.png");
 	}
 	
 	public void update() throws Exception {
