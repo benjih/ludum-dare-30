@@ -27,6 +27,7 @@ public class Sprite implements GLObject {
 		}
 		this.xEdge =  x + this.resource.getTextureWidth();
 		this.yEdge = y + this.resource.getTextureHeight();
+		System.out.println(xEdge + " " + yEdge);
 	}
 	
 	public void render () {

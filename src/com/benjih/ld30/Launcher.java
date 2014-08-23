@@ -11,9 +11,10 @@ public class Launcher {
 		
 		new FullscreenSprite(display, GameRes.SPLASH).run();
 		new FullscreenSprite(display, GameRes.INSTRUCTIONS).run();
-		
+		Planet planet = new Planet(PlanetType.TERRAN, "Earth");
 		while(true) {
 			display.blit();
+			planet.update();
 			display.closeIfRequested();
 			display.update();
 		}
